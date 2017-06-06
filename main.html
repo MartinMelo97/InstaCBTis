@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet"  href="materialize/css/materialize.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<style type="text/css">
+		#form_upload{
+			display: none;
+		}
+	</style>
+	<div id="datos_usuario">
+	</div>
+	<div>
+		<div class="container">
+			<div class="row" id="publicaciones">
+				
+			</div>	
+		</div>
+	</div>
+	<div >
+		<button type="button" id="btnGotoPublicar">Publica una foto setsi</button>
+		<div id="form_upload">
+			<label for="imagen"></label>
+			<input type="file" name="imagen" id="imagen">
+			<button id="btnUpload">Subir foto shavo</button>
+		</div>
+	</div>
+
+	<a href="index.html">Cerrar sesión</a>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyBi9ZM5ffq2WZhTmBsmPNt_7DBg58dgQA4",
+	    authDomain: "instacbtis.firebaseapp.com",
+	    databaseURL: "https://instacbtis.firebaseio.com",
+	    projectId: "instacbtis",
+	    storageBucket: "instacbtis.appspot.com",
+	    messagingSenderId: "358426867886"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	<script type="text/javascript" src="js/Database.js"></script>
+	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+</body>
+</html>
