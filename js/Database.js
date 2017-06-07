@@ -25,7 +25,7 @@ function initdb()
 	try{
 		if(!window.openDatabase)
 		{
-			alert("No puedes puto");
+			alert("No se puede");
 		}
 		else
 		{
@@ -81,9 +81,9 @@ function insertarUsuarios(){
 	console.log("inserto");
 	db.transaction(function(tx)
 	{
-		tx.executeSql(INSERTAR_USUARIO, ['maria@tonally.com','amoamelo','Juanita']);
-		tx.executeSql(INSERTAR_USUARIO, ['gibran@indra.com','amoamelo','RobertJR']);
-		tx.executeSql(INSERTAR_USUARIO, ['juan@susim.com','amoamelo','LuisitoRey']);
+		tx.executeSql(INSERTAR_USUARIO, ['maria@gmail.com','majo','Majo']);
+		tx.executeSql(INSERTAR_USUARIO, ['gibran@gmail.com','gibran','Gibran']);
+		tx.executeSql(INSERTAR_USUARIO, ['juan@gmail.com','juan','Juan']);
 	});
 }
 
@@ -133,7 +133,7 @@ function login()
 			}
 			if(existe == false)
 			{
-				alert("No existe prro");
+				alert("No es posible conectar");
 			}
 		});
 	});
